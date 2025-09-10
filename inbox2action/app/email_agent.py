@@ -2,7 +2,7 @@ from langchain_openai import ChatOpenAI
 from langgraph.graph import StateGraph
 from typing import TypedDict
 import json
-from app.calendar import create_calendar_event
+from inbox2action.app.google_calendar_service import create_calendar_event
 
 llm = ChatOpenAI(model="gpt-4o")
 
